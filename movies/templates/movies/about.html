@@ -1,4 +1,6 @@
 {% extends "movies/_base.html" %}
+
+{% block content %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,7 +48,7 @@
     </style>
 </head>
 <body>
-    {% block content %}
+    {% comment %} {% block content %} {% endcomment %}
         <h1>Explore My Collection of Film Genres</h1>
         <div class="genres">
             <span>Adventure</span>
@@ -59,6 +61,15 @@
             <span>Romance</span>
             <span>Sci-Fi</span>
         </div>
-    {% endblock %}
+
+        
+        <div>
+            <p>One of my favorite moves is Peaky Blinders</p>
+            {% load static %}
+            <img src="{% static 'movies/favMovie.jpg' %}" alt="Favorite movie image">
+            <p> image is from <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt2442560%2F&psig=AOvVaw2SvC2BaFHXrpp5lmVbyzo7&ust=1711560310749000&source=images&cd=vfe&opi=89978449&ved=0CBMQjhxqFwoTCJC3l5S5koUDFQAAAAAdAAAAABAE"> Imdb </a> </p>
+        </div>
+    {% comment %} {% endblock %} {% endcomment %}
 </body>
 </html>
+{% endblock %}
