@@ -23,6 +23,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     
     #From movies view
-    path('', index), # Index / Home page
-    path('about/', about)
+    path('', index, name="home"), # Index / Home page
+    path('about/', about, name="about")
 ]

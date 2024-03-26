@@ -1,3 +1,4 @@
+{% extends "movies/_base.html" %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,17 +46,19 @@
     </style>
 </head>
 <body>
-    <h1>Explore My Collection of Film Genres</h1>
-    <div class="genres">
-        <span>Adventure</span>
-        <span>Anime</span>
-        <span>Comedy</span>
-        <span>Documentary</span>
-        <span>Fantasy</span>
-        <span>History</span>
-        <span>Horror</span>
-        <span>Romance</span>
-        <span>Sci-Fi</span>
-    </div>
+    {% block content %}
+        <h1>Explore My Collection of Film Genres</h1>
+        <div class="genres">
+            <span>Adventure</span>
+            <span>Anime</span>
+            <span>Comedy</span>
+            <span>Documentary</span>
+            <span>Fantasy</span>
+            <span>History</span>
+            <span>Horror</span>
+            <span>Romance</span>
+            <span>Sci-Fi</span>
+        </div>
+    {% endblock %}
 </body>
 </html>

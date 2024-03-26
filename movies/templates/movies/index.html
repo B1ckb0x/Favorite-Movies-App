@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+{% extends "movies/_base.html" %}
+
+{% block content %}
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -50,8 +47,7 @@
             margin-top: 40px;
         }
     </style>
-</head>
-<body>
+
     <h1>My Favorite Movies!</h1>
     {% if movies_list %}
         <ul>
@@ -62,5 +58,4 @@
     {% else %}
         <p>No favorite movies found</p>
     {% endif %}
-</body>
-</html>
+{% endblock %}
