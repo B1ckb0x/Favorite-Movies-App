@@ -4,10 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 100px;
+            font-size: 36px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #2c3e50;
+        }
+        .genres {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 40px;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .genres span {
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 20px;
+            text-transform: uppercase;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+        }
+        .genres span:hover {
+            background-color: #2980b9;
+        }
+    </style>
 </head>
 <body>
-    <h1>Adventure, Anime, Comedy, Documentary, Fantasy, History, Horror
-        , Romance, Sci-Fi
-    </h1>
+    <h1>Explore My Collection of Film Genres</h1>
+    <div class="genres">
+        <span>Adventure</span>
+        <span>Anime</span>
+        <span>Comedy</span>
+        <span>Documentary</span>
+        <span>Fantasy</span>
+        <span>History</span>
+        <span>Horror</span>
+        <span>Romance</span>
+        <span>Sci-Fi</span>
+    </div>
 </body>
 </html>
